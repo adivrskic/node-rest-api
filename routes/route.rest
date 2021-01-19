@@ -1,0 +1,28 @@
+GET http://localhost:3000/test
+
+###
+
+GET http://localhost:3000/test/123
+
+###
+
+POST http://localhost:3000/test
+Content-Type: application/json
+
+{
+  "name": "Person",
+  "property1": "Yep, this is a property"
+}
+
+###
+
+DELETE http://localhost:3000/test/60072ad13c01543c8c8a62ac
+
+###
+
+PATCH http://localhost:3000/test/60072ad13c01543c8c8a62ac
+Content-Type: application/json
+
+{
+  "name": "NEW NAME"
+}
